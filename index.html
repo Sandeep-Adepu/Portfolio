@@ -6,30 +6,29 @@
   <title>Sandeep Adepu | Portfolio</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
+      background-color: #fdfdfd;
+      color: #333;
     }
     header {
       background-color: #1e90ff;
-      color: #fff;
-      padding: 40px 20px;
+      color: white;
+      padding: 60px 20px;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2.8em;
     }
     header p {
-      margin: 5px 0 0 0;
+      margin-top: 10px;
       font-size: 1.1em;
     }
     main {
       max-width: 900px;
-      margin: 20px auto;
+      margin: 40px auto;
       padding: 0 20px;
     }
     h2 {
@@ -38,11 +37,14 @@
       padding-bottom: 5px;
       margin-top: 40px;
     }
+    section {
+      margin-bottom: 30px;
+    }
     ul {
       padding-left: 20px;
     }
     li {
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
     .contact a {
       color: #1e90ff;
@@ -50,12 +52,6 @@
     }
     .contact a:hover {
       text-decoration: underline;
-    }
-    section {
-      margin-bottom: 20px;
-    }
-    .experience, .education, .certifications {
-      margin-bottom: 20px;
     }
     .job-title {
       font-weight: bold;
@@ -65,94 +61,119 @@
       font-style: italic;
       color: #555;
       font-size: 0.95em;
+      margin-bottom: 5px;
+    }
+    .experience, .education, .certifications {
+      margin-bottom: 20px;
+      background-color: #f4f8fc;
+      padding: 15px 20px;
+      border-radius: 8px;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      main {
+        margin: 20px auto;
+        padding: 0 10px;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Sandeep Adepu</h1>
-    <p>📧 sandeepadepu97@gmail.com | 📞 +91-9100794796 | <a href="https://www.linkedin.com/in/sandeep-adepu-6a53b8170/" target="_blank">LinkedIn</a></p>
-  </header>
-  <main>
-    <section>
-      <h2>Professional Summary</h2>
-      <p>A results-driven IT professional with over 6+ years of experience in Splunk Administration, Cloud Security, and Application Support. Specialized expertise includes managing Splunk Enterprise environments, including indexer and search head clustering, forwarder deployment, and data onboarding. Proven background in AWS Cloud Security, Linux administration, and SIEM platforms like Splunk and SNYPR, with a focus on threat detection and incident response. Skilled in automation, root cause analysis (RCA), and incident resolution.</p>
-    </section>
 
-    <section>
-      <h2>Core Skills</h2>
+<header>
+  <h1>Sandeep Adepu</h1>
+  <p>📧 sandeepadepu97@gmail.com | 📞 +91-9100794796 | 
+    <a href="https://www.linkedin.com/in/sandeep-adepu-6a53b8170/" target="_blank">LinkedIn</a>
+  </p>
+</header>
+
+<main>
+  <section>
+    <h2>Professional Summary</h2>
+    <p>A results-driven IT professional with over 6+ years of experience in Splunk Administration, Cloud Security, and Application Support. Specialized expertise includes managing Splunk Enterprise environments, including indexer and search head clustering, forwarder deployment, and data onboarding. Proven background in AWS Cloud Security, Linux administration, and SIEM platforms like Splunk and SNYPR, with a focus on threat detection and incident response. Skilled in automation, root cause analysis (RCA), and incident resolution.</p>
+  </section>
+
+  <section>
+    <h2>Core Skills</h2>
+    <ul>
+      <li>Splunk Enterprise: Cluster Management, Search Head Clustering, Universal/Heavy Forwarders, SSL Encryption, Data Parsing, Monitoring Console, Dashboards, Alerts</li>
+      <li>Cloud Platforms: AWS (EC2, IAM, VPC, S3, CloudWatch, CloudTrail), GCP, Azure</li>
+      <li>Security & SIEM: Splunk, SNYPR, Threat Detection, Incident Response, Vulnerability Remediation, Compliance Reporting</li>
+      <li>Operating Systems: Linux (RHEL, Ubuntu), Windows Server</li>
+      <li>Databases & Big Data: Oracle, Hadoop</li>
+      <li>Automation & DevOps: Jenkins, Rundeck, CI/CD, Shell Scripting, Python</li>
+      <li>Ticketing/Monitoring Tools: Jira, ServiceNow, Zoho</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+
+    <div class="experience">
+      <div class="job-title">Accenture – Senior Security Delivery Analyst</div>
+      <div class="job-duration">(Jun 2024 – Present)</div>
       <ul>
-        <li>Splunk Enterprise: Cluster Management, Search Head Clustering, Universal/Heavy Forwarders, SSL Encryption, Data Parsing, Monitoring Console, Dashboards, Alerts</li>
-        <li>Cloud Platforms: AWS (EC2, IAM, VPC, S3, CloudWatch, CloudTrail), GCP, Azure</li>
-        <li>Security & SIEM: Splunk, SNYPR, Threat Detection, Incident Response, Vulnerability Remediation, Compliance Reporting</li>
-        <li>Operating Systems: Linux (RHEL, Ubuntu), Windows Server</li>
-        <li>Databases & Big Data: Oracle, Hadoop</li>
-        <li>Automation & DevOps: Jenkins, Rundeck, CI/CD, Shell Scripting, Python</li>
-        <li>Ticketing/Monitoring Tools: Jira, ServiceNow, Zoho</li>
+        <li>Administered Splunk indexer and search head clusters to support large-scale enterprise monitoring.</li>
+        <li>Implemented secure data ingestion pipelines from AWS, GCP, and on-premises environments.</li>
+        <li>Configured SSL/TLS encryption between Splunk forwarders and indexers to ensure security policy compliance.</li>
+        <li>Built custom dashboards, alerts, and compliance reports, improving cloud visibility by 40%.</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
-      <h2>Professional Experience</h2>
+    <div class="experience">
+      <div class="job-title">Softtek – Security Engineer</div>
+      <div class="job-duration">(Oct 2023 – Jun 2024)</div>
+      <ul>
+        <li>Supported the SNYPR SIEM platform and Splunk for threat detection and event correlation.</li>
+        <li>Fine-tuned security policies and alerts, reducing false positives by 25%.</li>
+        <li>Performed server administration, event validation, and migration to strengthen infrastructure.</li>
+      </ul>
+    </div>
 
-      <div class="experience">
-        <div class="job-title">Accenture – Senior Security Delivery Analyst</div>
-        <div class="job-duration">(Jun 2024 – Present)</div>
-        <ul>
-          <li>Administered Splunk indexer and search head clusters to support large-scale enterprise monitoring.</li>
-          <li>Implemented secure data ingestion pipelines from AWS, GCP, and on-premises environments.</li>
-          <li>Configured SSL/TLS encryption between Splunk forwarders and indexers to ensure security policy compliance.</li>
-          <li>Built custom dashboards, alerts, and compliance reports, improving cloud visibility by 40%.</li>
-        </ul>
-      </div>
+    <div class="experience">
+      <div class="job-title">Securonix – Cloud Security Engineer</div>
+      <div class="job-duration">(Oct 2021 – Oct 2023)</div>
+      <ul>
+        <li>Designed log ingestion pipelines from multiple Remote Ingestion Nodes (RINs) into AWS-based storage.</li>
+        <li>Processed and optimized data flow across HBase, Redis, and Solr to ensure secure storage and fast search.</li>
+        <li>Investigated and debugged ingestion and policy issues, collaborating with customers via the Support Portal.</li>
+        <li>Collaborated with SOC teams to improve incident detection and compliance monitoring.</li>
+      </ul>
+    </div>
 
-      <div class="experience">
-        <div class="job-title">Softtek – Security Engineer</div>
-        <div class="job-duration">(Oct 2023 – Jun 2024)</div>
-        <ul>
-          <li>Supported the SNYPR SIEM platform and Splunk for threat detection and event correlation.</li>
-          <li>Fine-tuned security policies and alerts, reducing false positives by 25%.</li>
-          <li>Performed server administration, event validation, and migration to strengthen infrastructure.</li>
-        </ul>
-      </div>
+    <div class="experience">
+      <div class="job-title">IBM – Systems Engineer</div>
+      <div class="job-duration">(Sept 2019 – Sept 2021)</div>
+      <ul>
+        <li>Provided L2/L3 production support for a global banking platform.</li>
+        <li>Automated monitoring and troubleshooting using Shell scripting and SQL, reducing incident recurrence.</li>
+        <li>Conducted root cause analysis (RCA) and resolved high-priority incidents to maintain 99.9% system uptime.</li>
+        <li>Developed and enhanced SQL/PLSQL scripts for performance tuning and reporting.</li>
+      </ul>
+    </div>
+  </section>
 
-      <div class="experience">
-        <div class="job-title">Securonix – Cloud Security Engineer</div>
-        <div class="job-duration">(Oct 2021 – Oct 2023)</div>
-        <ul>
-          <li>Designed log ingestion pipelines from multiple Remote Ingestion Nodes (RINs) into AWS-based storage.</li>
-          <li>Processed and optimized data flow across HBase, Redis, and Solr to ensure secure storage and fast search.</li>
-          <li>Investigated and debugged ingestion and policy issues, collaborating with customers via the Support Portal.</li>
-          <li>Collaborated with SOC teams to improve incident detection and compliance monitoring.</li>
-        </ul>
-      </div>
-
-      <div class="experience">
-        <div class="job-title">IBM – Systems Engineer</div>
-        <div class="job-duration">(Sept 2019 – Sept 2021)</div>
-        <ul>
-          <li>Provided L2/L3 production support for a global banking platform.</li>
-          <li>Automated monitoring and troubleshooting using Shell scripting and SQL, reducing incident recurrence.</li>
-          <li>Conducted root cause analysis (RCA) and resolved high-priority incidents to maintain 99.9% system uptime.</li>
-          <li>Developed and enhanced SQL/PLSQL scripts for performance tuning and reporting.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Education</h2>
+  <section>
+    <h2>Education</h2>
+    <div class="education">
       <ul>
         <li>B.Tech – Mechanical Engineering, CVR College of Engineering, 2019</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <h2>Certifications</h2>
+  <section>
+    <h2>Certifications</h2>
+    <div class="certifications">
       <ul>
         <li>Splunk Enterprise Certified Admin (Pursuing)</li>
         <li>AWS Cloud Practitioner (Pursuing)</li>
       </ul>
-    </section>
-  </main>
+    </div>
+  </section>
+</main>
+
 </body>
 </html>
